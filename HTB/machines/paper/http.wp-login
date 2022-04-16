@@ -1,0 +1,15 @@
+POST /wp-login.php HTTP/1.1
+Host: office.paper
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://office.paper/wp-login.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 91
+Origin: http://office.paper
+Connection: close
+Cookie: wordpress_test_cookie=WP+Cookie+check
+Upgrade-Insecure-Requests: 1
+
+log=prisonmike&pwd=%27&wp-submit=Log+In&redirect_to=http%3A%2F%2Foffice.paper%2Fwp-admin%2F&testcookie=1

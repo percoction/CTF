@@ -1,0 +1,14 @@
+GET /wp-login.php?redirect_to=http%3A%2F%2F HTTP/1.1
+Host: office.paper
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://office.paper/index.php/2021/06/19/secret-of-my-success/
+Connection: keep-alive
+Cookie: wordpress_test_cookie=WP+Cookie+check
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+
