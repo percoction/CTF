@@ -1,0 +1,11 @@
+AccessDeniedCTF2022 ret2win
+
+Running the 'win' function prints the flag.
+
+There is a function called vuln with a bof being called
+
+Overwrite the return of that function with the address e.sym['win'] of the win function
+
+Used cyclical pattern input and then matching whats in $eip to get return address offset in GEF
+
+* I was off by 4 bytes..not sure why
