@@ -1,0 +1,19 @@
+AccessDeniedCTF2022 - ret2system
+
+binary has a vuln(erable)() function that:
+  - calls system() for something unrelated (but it now linked)
+  - stores input in a local var
+  - takes more input that has a bof vulnerability
+
+we want to overwrite the return address with the address of system (e.sym['system'])
+
+we can store a string to pass in a known location (from the first fgets() call in that same vuln() function)
+
+we can find the address of the stored local var by examining the ELF
+
+padding determinied by sending cyclical pattern as overflow input
+  - again im off by 4...pattern overwriting return address is at offset 41 (little-endian) but we need 44byte padding
+
+we also want to put the pointer to the string stored from the first fgets call on the stack as the first argument to system()
+  - this ends up being the second set of 4bytes after the overwritten return address
+
